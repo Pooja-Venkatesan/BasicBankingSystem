@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+html {
+  font-size: 14px;
+}
+h1 {
+  font-size: 4rem;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.myImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 2rem;
+   
+}
+
+@media (max-width: 768px) {
+  .myImg {
+     width: 80%
+   }
+}
+
+.zoom {
+    transition:ease-in; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+  
+
+body {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(70, 68, 68);
+}
+
+.active {
+  background-color: #eba983;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+h5{
+    background-color:peachpuff;
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 0.25rem;
+}
+section {
+    background-color: #f5d6c5;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1rem;
+}
+
+#viewButton{
+        width: 20%;
+}
+@media screen {
+    #myButton{
+        width:50%;
+
+}
+
+}
+
+#transButton{
+    width: 20%;
+}
+@media screen {
+    #myButton{
+        width: fit-content;
+}
+
+}
+p{
+    font-size: 1.25rem;
+}
+aside {
+  margin-left: 15px;
+  float: right;
+   
+}
+
+</style>
+
+<body>
+
+<nav class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i><br>  HOME</a> 
+  <a href="customers.html"><i class="fa fa-users"></i> <br> CUSTOMERS</a> 
+  <a href="transfer.html"><i class="fa fa-inr"></i> <br> TRANSFER</a> 
+  <a href="history.html"><i class="fa fa-history"></i> <br> HISTORY</a>
+  
+  
+</nav>
+
+<header><h1 class="display-4" style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif;">OREO BANK</h1></header>
+<h5>
+ Instant Money Transfer!
+</h5>
+<section><div><br>
+    <p>
+        <b>&nbsp;&nbsp;&nbsp;OREO BANK</b>, is a high quality, customer centric and service driven Bank. Since inception in <b>2004</b>, OREO BANK has grown into a ‘Full Service Commercial Bank’ providing a complete range of products, services and technology driven digital offerings, catering to corporate, MSME & retail customers.</p> 
+    
+    <p>&nbsp;&nbsp;&nbsp;OREO BANK operates its <u>Investment banking, Merchant banking & Brokerage businesses</u> through <b>OREO SECURITIES</b> and its Mutual Fund business through <b>OREO Asset Management (India) Limited</b>, both wholly owned subsidiaries of the Bank. Headquartered in Mumbai, it has a pan-India presence across all 28 states and 9 Union Territories in India including an IBU at GIFT City, and a Representative Office in Abu Dhabi.
+        <br>
+            <img src="bank.png" class="myImg">
+        
+    </p></div>
+        
+    <center>
+        <button type="button" id="viewButton" class="zoom btn btn-info">VIEW ALL CUSTOMERS</button>
+        <button type="button" id="transButton" class="zoom btn btn-success">QUICK TRANSFER</button>
+    </center>
+        
+    <br><br>
+    <script src="task1.js"></script>
+</body>
+</html> 
