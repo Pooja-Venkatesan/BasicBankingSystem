@@ -92,6 +92,16 @@ button{
        
    }
 }
+
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
 </style>
 <body>
 
@@ -109,21 +119,23 @@ button{
 <br>
 <section>
     <form><table>
-        <tr><fieldset>
+        <fieldset><tr>
             <legend>FROM :</legend>
-            <td>Name :</td>
-            <td><input type="name" id="name" required></td>
-            <td>Account Number :</td>
-            <td><input type="number" id="number" required></td>
-          </fieldset>
+            <td><label for="Name">Name :</label></td>
+            <td><input type="name" id="name" name="Name" required></td>
+            <td><label for="AcctNo">Account Number :</label></td>
+            <td><input type="number" id="number" name="AcctNo" required></td>
           </tr>
-        <tr>
-            <th>TO :</th>
-            <td>Name :</td>
-            <td><input type="name" id="name" required></td>
-            <td>Account Number :</td>
-            <td><input type="number" id="number" required></td>
-        </tr>
+          </fieldset>
+          
+        <fieldset><tr>
+            <legend>TO :</legend>
+            <td><label for="Name">Name :</label></td>
+            <td><input type="name" id="name" name="Name" required></td>
+            <td><label for="AcctNo">Account Number :</label></td>
+            <td><input type="number" id="number" name="AcctNo" required></td>
+          </fieldset>
+          
         <tr>
             <th colspan="2">AMOUNT (in INR) :</th>
             <td><input type="number" id="number" required></td>
