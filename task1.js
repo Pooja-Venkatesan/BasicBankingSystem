@@ -6,25 +6,18 @@ document.getElementById("transButton").onclick = function() {
     location.href="TransferForm.html";
 };
 
- 
 
-function send()
+function required()
 {
 var empt = document.forms["form1"]["text1"].value;
 if (empt == "")
 {
-    alert('error please fill all fields!');
+alert("Please fill the required fields");
+return false;
 }
-      else if (confirm("Confrim to make transaction!")) {
-    txt = "You pressed OK!";
-    alert("Transaction Successful!")
-    location.href="history.html";
+else if (empt != "") {  
+confirm("Confrim to make transaction!");
+alert("Transaction Successful!");
+location.href="history.html";
 }
-
-else {
-    txt = "You pressed Cancel!";
-    alert("Transaction Cancelled!")
-    location.href="history.html";
-  }
-
 };
