@@ -115,6 +115,22 @@ aside {
    
 }
 
+@media (max-width: 768px) {
+    .btn-responsive {
+        padding:6px 6px;
+        font-size:90%;
+        line-height: 1;
+        border-radius:3px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+        padding:4px 9px;
+        font-size:90%;
+        line-height: 1.2;
+    }
+}
 </style>
 
 <body>
@@ -124,33 +140,24 @@ aside {
   <a href="customers.html"><i class="fa fa-users"></i> <br> CUSTOMERS</a> 
   <a href="transfer.html"><i class="fa fa-inr"></i> <br> TRANSFER</a> 
   <a href="history.html"><i class="fa fa-history"></i> <br> HISTORY</a>
-  
-  
+
 </nav>
 
 <header><h1 class="display-4" style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif;">OREO BANK</h1></header>
-<h5 style="color: brown;"><marquee direction="up" scrollamount="1">&nbsp;&nbsp;&nbsp;
-  <center><p style="font-weight: bold; color: chocolate;">Welcome To Oreo Bank</p></center>
-  <center>
-  Instant Money Transfer!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instant Money Transfer!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instant Money Transfer!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instant Money Transfer!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instant Money Transfer!
-    </center>
+<h5 style="color: brown;"><marquee direction="up" scrollamount="1">  
+<center>Instant Money Transfer!</center>
 </marquee>
 </h5>
 <section><div><br>
-    <p>
-        <b>&nbsp;&nbsp;&nbsp;OREO BANK</b>, is a high quality, customer centric and service driven Bank. Since inception in <b>2004</b>, OREO BANK has grown into a ‘Full Service Commercial Bank’ providing a complete range of products, services and technology driven digital offerings, catering to corporate, MSME & retail customers.</p> 
-    
-    <p>&nbsp;&nbsp;&nbsp;OREO BANK operates its <u>Investment banking, Merchant banking & Brokerage businesses</u> through <b>OREO SECURITIES</b> and its Mutual Fund business through <b>OREO Asset Management (India) Limited</b>, both wholly owned subsidiaries of the Bank. Headquartered in Mumbai, it has a pan-India presence across all 28 states and 9 Union Territories in India including an IBU at GIFT City, and a Representative Office in Abu Dhabi.
+    <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OREO BANK</b>, is a high quality, customer centric and service driven Bank. Since inception in <b>2004</b>, OREO BANK has grown into a ‘Full Service Commercial Bank’ providing a complete range of products, services and technology driven digital offerings, catering to corporate, MSME & retail customers.</p> 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OREO BANK operates its <u>Investment banking, Merchant banking & Brokerage businesses</u> through <b>OREO SECURITIES</b> and its Mutual Fund business through <b>OREO Asset Management (India) Limited</b>, both wholly owned subsidiaries of the Bank. Headquartered in Mumbai, it has a pan-India presence across all 28 states and 9 Union Territories in India including an IBU at GIFT City, and a Representative Office in Abu Dhabi.
         <br>
-            <img src="bank.png" class="myImg">
-        
+            <img src="bank.png" class="myImg"> 
     </p></div>
-        
     <center>
-        <button type="button" id="viewButton" class="zoom btn btn-info">VIEW ALL CUSTOMERS</button>
-        <button type="button" id="transButton" class="zoom btn btn-success">QUICK TRANSFER</button>
-    </center>
-        
+        <button type="button" id="viewButton" class="zoom btn btn-info btn-responsive">VIEW ALL CUSTOMERS</button>
+        <button type="button" id="transButton" class="zoom btn btn-success btn-responsive">QUICK TRANSFER</button>
+    </center>  
     <br><br>
     <script src="task1.js"></script>
 </body>
