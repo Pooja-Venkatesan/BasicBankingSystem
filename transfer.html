@@ -47,7 +47,7 @@ section {
 }
 .icon-bar {
   width: 100%;
-  background-color: #555;
+  background-color: rgb(0, 0, 0);
   overflow: auto;
 }
 
@@ -94,6 +94,7 @@ button{
 }
 
 fieldset {
+  margin: 1rem;
   background-color: #eeeeee;
 }
 
@@ -102,6 +103,7 @@ legend {
   color: white;
   padding: 5px 10px;
 }
+
 </style>
 <body>
 
@@ -118,29 +120,33 @@ legend {
 <h5 class="display-6" style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif">QUICK TRANSFER</h5>
 <br>
 <section>
-    <form><table>
-        <fieldset><tr>
+    <form>
+        <fieldset>
             <legend>FROM :</legend>
+            <table><tr>
             <td><label for="Name">Name :</label></td>
             <td><input type="name" id="name" name="Name" required></td>
             <td><label for="AcctNo">Account Number :</label></td>
             <td><input type="number" id="number" name="AcctNo" required></td>
-          </tr>
+          </tr></table>
           </fieldset>
           
-        <fieldset><tr>
+        <fieldset>
             <legend>TO :</legend>
+            <table><tr>
             <td><label for="Name">Name :</label></td>
             <td><input type="name" id="name" name="Name" required></td>
             <td><label for="AcctNo">Account Number :</label></td>
             <td><input type="number" id="number" name="AcctNo" required></td>
+          </tr></table>
           </fieldset>
-          
+         
+          <table>
         <tr>
             <th colspan="2">AMOUNT (in INR) :</th>
             <td><input type="number" id="number" required></td>
         </tr>
-    </table>
+        </table>
         <center>
          <span>  
         <button type="button" id="sendButton" onclick="send()" class="zoom btn btn-success">TRANSFER</button></span>
