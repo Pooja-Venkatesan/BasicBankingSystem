@@ -76,9 +76,7 @@ nav {
 
 table,tr,th,td{
     padding: 1.5rem;
-    margin:0 auto;
-    
-    
+    margin:0 auto;   
 }
 button{
     margin-left:2rem;
@@ -103,7 +101,22 @@ legend {
   color: white;
   padding: 5px 10px;
 }
+@media (max-width: 768px) {
+    .btn-responsive {
+        padding:6px 6px;
+        font-size:90%;
+        line-height: 1;
+        border-radius:3px;
+    }
+}
 
+@media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+        padding:4px 9px;
+        font-size:90%;
+        line-height: 1.2;
+    }
+}
 </style>
 <body>
 
@@ -112,8 +125,7 @@ legend {
   <a href="customers.html"><i class="fa fa-users"></i> <br> CUSTOMERS</a> 
   <a href="transfer.html" class="active"><i class="fa fa-inr"></i> <br> TRANSFER</a> 
   <a href="history.html" ><i class="fa fa-history"></i><br>  HISTORY</a> 
-  
-  
+
 </nav>
 
 <header><h1 class="display-4" style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif">OREO BANK</h1></header>
@@ -149,9 +161,9 @@ legend {
         </table>
         <center>
          <span>  
-        <button type="button" id="sendButton" onclick="send()" class="zoom btn btn-success">TRANSFER</button></span>
+        <button type="button" id="sendButton" onclick="send()" class="zoom btn btn-success btn-responsive">TRANSFER</button></span>
         <span>
-        <button type="reset" class="zoom btn btn-danger">CLEAR</button>
+        <button type="reset" class="zoom btn btn-danger btn-responsive">CLEAR</button>
         </span>
         </center>
         
