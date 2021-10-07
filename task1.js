@@ -3,7 +3,7 @@ document.getElementById("viewButton").onclick = function () {
 };
 
 document.getElementById("transButton").onclick = function() {
-    location.href="transfer.html";
+    location.href="TransferForm.html";
 };
 
 
