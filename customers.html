@@ -73,6 +73,18 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+button{
+  width: 7rem;
+  display: block;
+}
+
+.zoom {
+    transition:ease-in; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 </style>
 <body>
 
@@ -88,7 +100,23 @@ nav {
 <h5 class="display-6" style="text-align: center; font-family:Georgia, 'Times New Roman', Times, serif">CUSTOMERS</h5><br>
 <section>
 
-  
+<button type="button" class="zoom btn btn-dark btn-responsive" onclick='document.getElementById("demo0").innerHTML = "NAME: VISVESH S ACCOUNT NUMBER: 190071601176"'>VISVESH S</button>
+<p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;" id="demo0">..</p>
+
+
+<button type="button" class="zoom btn btn-dark btn-responsive" onclick='document.getElementById("demo1").innerHTML = "NAME: SHADOW ACCOUNT NUMBER: 190071601061"'>SHADOW</button>
+<p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem; " id="demo1">..</p>
+
+
+<button type="button" class="zoom btn btn-dark btn-responsive" onclick='document.getElementById("demo2").innerHTML = "NAME: JULLIEE ACCOUNT NUMBER: 190071601062"'>JULLIEE</button>
+<p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;" id="demo2">..</p>
+
+<button type="button" class="zoom btn btn-dark btn-responsive" onclick='document.getElementById("demo3").innerHTML = "NAME: GINGER ACCOUNT NUMBER: 190071601065"'>GINGER</button>
+<p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;" id="demo3">..</p>
+
+<button type="button" class="zoom btn btn-dark btn-responsive" onclick='document.getElementById("demo4").innerHTML = "NAME: POOJA ACCOUNT NUMBER: 190071601050"'>POOJA</button>
+<p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;" id="demo4">..</p>
+
 </section>
 </body>
 </html> 
