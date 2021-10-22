@@ -21,3 +21,4 @@ alert("Transaction Successful!");
 location.href="history.html";
 }
 };
+
